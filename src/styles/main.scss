@@ -1,0 +1,11 @@
+@import "_variables.scss";
+
+body{
+    background-color: $bg-body;
+}
+
+.main-footer{
+    background-color: rebeccapurple;
+    color: white;
+    height: 150px;
+}
