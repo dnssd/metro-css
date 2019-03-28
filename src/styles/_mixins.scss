@@ -1,0 +1,7 @@
+// Mixins
+@mixin flex-hack($dir, $align, $justify){
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+}
