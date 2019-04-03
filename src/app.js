@@ -2,5 +2,5 @@ import "./styles/main.scss";
 import "./static/img/senaletica.jpg";
 
 
-console.log('first mssge');
+console.log('first mssge :)');
 
