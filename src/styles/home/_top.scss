@@ -16,9 +16,10 @@ section.top {
       font-size: 3.5rem;
       font-weight: 300;
       text-transform: uppercase;
-      padding: 0rem 2rem;
+      padding-left: 12%;
       letter-spacing: 2px;
       line-height: 4rem;
+      width: 100%;
       span{
         display: block;
       }
@@ -31,10 +32,11 @@ section.top {
       font-weight: 300;
       font-style: italic;
       margin-top: .5rem;
-      padding: 0 2rem;
+      padding-left: 12%;
+      width: 100%;
     }
   }
-  .magic-container {
+  .warrior-container {
     width: 100%;
     height: auto;
     @include flex-hack(row, center, center);
