@@ -36,7 +36,6 @@ section.bottom {
       width: 100%;
     }
   }
-
   .warrior-container {
     width: 100%;
     height: auto;
@@ -47,8 +46,113 @@ section.bottom {
       border-radius: 3%;
       width: 680px;
       min-height: 600px;
-      padding: 2rem 1.5rem;
+      padding: 0.6rem;
       display: flex;
+      .black-box {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        @include flex-hack(column, center, space-between);
+        position: relative;
+        .top-box {
+          width: 100%;
+          height: 16%;
+          background-color: $dark;
+          border-radius: 15px 15px 0 0;
+        }
+        .handles{
+          width: 24%;
+          height: 90px;
+          position: absolute;
+          right: 32.5%;
+          top: 16%;
+          z-index: 2;
+          .first-handle{
+            width: 3px;
+            height: 65%;
+            background-color: $dark;
+            position: absolute;
+            left: 0;
+            &::after{
+              content: "";
+              position: absolute;
+              height: 50px;
+              width: 50px;
+              background-color: $gold;
+              bottom: -50px;
+              border-radius: 50%;
+              right: -27.5px;
+              border: 4px solid $light-dark;
+            }
+          }
+          .second-handle{
+            width: 4px;
+            height: 65%;
+            background-color: $light-dark;
+            position: absolute;
+            right: 0;
+            &::after{
+              content: "";
+              position: absolute;
+              height: 50px;
+              width: 50px;
+              background-color: $gold;
+              bottom: -50px;
+              border-radius: 50%;
+              right: -27.5px;
+              border: 4px solid $light-dark;
+            }
+          }
+        }
+        .windows {
+          width: 100%;
+          height: 140px;
+          position: absolute;
+          top: 32%;
+          display: flex;
+          justify-content: space-between;
+          .left-window {
+            width: 16%;
+            border: 5px solid $light-dark;
+            border-left: unset;
+            height: 100%;
+            border-radius: 0 20px 20px 0;
+          }
+          .center-window{
+            border: 5px solid $light-dark;
+            width: 42%;
+            height: 100%;
+            border-radius: 20px;
+          }
+          .right-window{
+            border: 5px solid $light-dark;
+            width: 30%;
+            height: 100%;
+            border-radius: 20px 0 0 20px;
+            border-right: 0;
+          }
+        }
+        .person-box{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          .head{
+            width: 70px;
+            height: 70px;
+            background-color: #000;
+            position: absolute;
+            left: 13%;
+            top: 42%;
+            border-radius: 50%;
+          }
+        }
+        .bottom-box {
+          width: 100%;
+          height: 15%;
+          background-color: $dark;
+          border-radius: 0 0 15px 15px;
+        }
+      }
     }
   }
 }
