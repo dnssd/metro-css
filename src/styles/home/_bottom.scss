@@ -84,6 +84,17 @@ section.bottom {
               right: -27.5px;
               border: 4px solid $dark;
             }
+            &::before{
+              content: "";
+              position: absolute;
+              height: 90px;
+              width: 90px;
+              background-color: transparent;
+              bottom: -74px;
+              border-radius: 50%;
+              right: -52px;
+              border: 8px solid $red-arrow;
+            }
           }
           .second-handle {
             width: 4px;
@@ -132,6 +143,45 @@ section.bottom {
             border-right: 0;
           }
         }
+        .left-exclamation {
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          left: 8%;
+          bottom: 25%;
+          transform: rotate(-65deg);
+          span:first-child {
+            width: 2rem;
+            height: 0.5rem;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            top: 38px;
+            right: -14px;
+            transform: rotate(90deg);
+            border-radius: 10px;
+          }
+          span:nth-child(2) {
+            width: 2rem;
+            height: 0.5rem;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            top: 48px;
+            right: 10px;
+            transform: rotate(45deg);
+            border-radius: 10px;
+          }
+          span:last-child {
+            width: 2rem;
+            height: 0.5rem;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            right: 18px;
+            border-radius: 10px;
+          }
+        }
         .person-box {
           width: 100%;
           height: 100%;
@@ -146,20 +196,31 @@ section.bottom {
             border-radius: 50%;
           }
           .left-arm {
-            width: 18%;
+            width: 15%;
             height: 35px;
             position: absolute;
-            bottom: 46%;
+            bottom: 44%;
             left: 22%;
             transform: rotate(-53deg);
-            background-color: black;
-            border-radius: 0 30px 30px 0;
-            border: 2px solid red;
+            background-color: $dark;
+            border-radius: 10px 30px 15px 0;
             z-index: 2;
+
+            &::after {
+              content: "";
+              width: 38%;
+              height: 70px;
+              background-color: #000;
+              position: absolute;
+              right: -27px;
+              top: -40px;
+              transform: rotate(45deg);
+              border-radius: 15px 15px 5px 0;
+            }
           }
           .right-arm {
-            width: 30%;
-            height: 30px;
+            width: 28%;
+            height: 35px;
             position: absolute;
             bottom: 42%;
             left: 26%;
@@ -168,14 +229,95 @@ section.bottom {
             border-radius: 0 30px 30px 0;
           }
           .body {
-            width: 70px;
+            width: 60px;
             height: 145px;
             background-color: $dark;
             position: absolute;
-            bottom: 22%;
+            bottom: 21%;
             left: 28%;
             transform: rotate(-36deg);
-            border-radius: 0px 0px 0px 15px;
+            border-radius: 15px 0px 0px 15px;
+          }
+          .left-leg {
+            width: 38%;
+            height: 45px;
+            background-color: $dark;
+            position: absolute;
+            bottom: 28%;
+            left: 33%;
+            transform: rotate(-36deg);
+            border-radius: 0px 30px 30px 30px;
+          }
+          .right-leg {
+            width: 18%;
+            height: 45px;
+            background-color: $dark;
+            position: absolute;
+            bottom: 24%;
+            left: 50%;
+            transform: rotate(10deg);
+            border-radius: 0px 30px 30px 0px;
+          }
+        }
+        .briefcase {
+          width: 16%;
+          height: 65px;
+          background-color: $dark;
+          position: absolute;
+          bottom: 33%;
+          right: 6%;
+          transform: rotate(50deg);
+          border-radius: 10px;
+
+          &::after{
+            content: "";
+            border: 4px solid $dark;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 15px);
+            top: -15px;
+          }
+        }
+        .right-exclamation {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            right: 17%;
+            bottom: 22%;
+            transform: rotate(115deg);
+            span:first-child {
+              width: 2rem;
+              height: 0.5rem;
+              background-color: #000;
+              position: absolute;
+              bottom: 0;
+              top: 38px;
+              right: -14px;
+              transform: rotate(90deg);
+              border-radius: 10px;
+            }
+            span:nth-child(2) {
+              width: 2rem;
+              height: 0.5rem;
+              background-color: #000;
+              position: absolute;
+              bottom: 0;
+              top: 48px;
+              right: 10px;
+              transform: rotate(45deg);
+              border-radius: 10px;
+            }
+            span:last-child {
+              width: 2rem;
+              height: 0.5rem;
+              background-color: #000;
+              position: absolute;
+              bottom: 0;
+              right: 18px;
+              border-radius: 10px;
           }
         }
         .bottom-box {
