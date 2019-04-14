@@ -1,5 +1,6 @@
 import "./styles/main.scss";
-import "./static/img/senaletica.jpg";
+import "./static/img/img1.jpeg";
+import "./static/img/img2.jpeg";
 
 
 window.onload = function(){

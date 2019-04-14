@@ -42,7 +42,7 @@ module.exports = {
                     options: {
                         mozjpeg: {
                             progressive: true,
-                            quality: 65
+                            quality: 90
                         },
                         // optipng.enabled: false will disable optipng
                         optipng: {
@@ -57,7 +57,7 @@ module.exports = {
                         },
                         // the webp option will enable WEBP
                         webp: {
-                            quality: 75
+                            quality: 90
                     }
                 }
             }
